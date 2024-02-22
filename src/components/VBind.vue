@@ -1,6 +1,6 @@
 <template>
   <div class="tasks">
-    <div class="tasks__one task">
+    <div class="task">
       <div>Task 1</div>
       <div class="img-wrapper">
         <img
@@ -16,6 +16,20 @@
         class="task__input"
       />
     </div>
+    <div class="task">
+      <div>Task 2</div>
+      <p v-bind:class="customColor" class="task__text">
+        color me (by v-bind:class)!🔥
+      </p>
+      <p v-bind:style="{ color: customColor }" class="task__text">
+        color me (by v-bind:style)!✨
+      </p>
+      <div class="btns">
+        <button @click="customColor = 'blue'">blue</button>
+        <button @click="customColor = 'green'">green</button>
+        <button @click="customColor = 'orange'">orange</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -23,11 +37,22 @@
 import { ref } from "vue";
 
 const link = ref("");
+const customColor = ref("");
+
 const defaultImage =
   "https://f8.pmo.ee/wzKYitGs5fJ_6bi3QRd7YJeHwkk=/685x0/nginx/o/2022/08/03/14736428t1h4a35.jpg";
 </script>
 
 <style scoped>
+.blue {
+  color: blue;
+}
+.green {
+  color: green;
+}
+.orange {
+  color: orange;
+}
 .tasks {
   background: -webkit-linear-gradient(#ffe894, #ffccf8);
   padding: 25px;
@@ -41,7 +66,7 @@ const defaultImage =
   align-items: center;
   gap: 25px;
   padding: 10px 7px;
-  width: fit-content;
+  width: 300px;
 }
 .img-wrapper {
   width: 280px;
