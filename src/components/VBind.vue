@@ -87,10 +87,7 @@ const defaultImageNaruto =
   "https://cojo.ru/wp-content/uploads/2022/12/naruto-konokha-1-2.webp";
 
 function swapNarutoPicture(link: string): void {
-  console.log("переданный аргумент: ", link);
-  console.log("currentNarutoImage before is: ", currentNarutoImage.value);
   currentNarutoImage.value = link;
-  console.log("currentNarutoImage after is: ", currentNarutoImage.value);
 }
 </script>
 
