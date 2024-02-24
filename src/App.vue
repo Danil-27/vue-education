@@ -1,19 +1,11 @@
 <template>
   <div class="app">
-    <Vif-header></Vif-header>
-    <VifBody></VifBody>
+    <VbindMain />
   </div>
 </template>
 
-<script>
-import VifBody from './components/VifBody.vue';
-import VifHeader from './components/VifHeader.vue';
-export default {
-  components: {
-    VifHeader,
-    VifBody
-  }
-};
+<script setup>
+import VbindMain from './components/VbindMain.vue';
 </script>
 
 <style scoped>
