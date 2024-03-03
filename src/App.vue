@@ -1,15 +1,11 @@
 <template>
   <div class="app">
-    <VbindMainThree />
-    <VbindMain />
-    <VbindTwoClass />
+    <VmodelMain />
   </div>
 </template>
 
 <script setup>
-import VbindMainThree from './components/V-bind/VbindMainThree.vue';
-import VbindMain from './components/V-bind/VbindMain.vue';
-import VbindTwoClass from './components/V-bind/VbindTwoClass.vue';
+import VmodelMain from './components/V-model/VmodelMainVue3.vue';
 </script>
 
 <style scoped>
@@ -17,5 +13,6 @@ import VbindTwoClass from './components/V-bind/VbindTwoClass.vue';
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: rgb(33, 44, 64);
 }
 </style>
