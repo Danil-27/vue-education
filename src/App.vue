@@ -1,13 +1,23 @@
 <template>
-  <!-- <Header /> -->
-  <!-- <Catalog /> -->
-  <VModel />
+  <div>
+    parent input:
+    <input :value="myData" @input="handleParentInput" type="text" />
+    <div>parent: {{ myData }}</div>
+    <Post :childData="myData" @inputChild="handleChildInput" />
+  </div>
 </template>
 
 <script setup lang="ts">
-// import Header from "./components/HeaderComponent.vue";
-// import Catalog from "./components/CatalogComponent.vue";
-import VModel from "./components/VModel.vue";
-</script>
+import Post from "./components/PostComponent.vue";
+import { ref } from "vue";
 
-<style scoped></style>
+const myData = ref("baseValue");
+
+function handleParentInput(event: Event): void {
+  const elem = event.target as HTMLInputElement;
+  myData.value = elem.value;
+}
+function handleChildInput(childData: string): void {
+  myData.value = childData;
+}
+</script>
