@@ -1,11 +1,11 @@
 <template>
   <div class="app">
-    <VmodelTasksTwo />
+    <VmodelMainTaskThree />
   </div>
 </template>
 
 <script setup>
-import VmodelTasksTwo from './components/V-model/VmodelTasksTwo.vue';
+import VmodelMainTaskThree from './components/V-model/VmodelMainTaskThree.vue';
 </script>
 
 <style scoped>
