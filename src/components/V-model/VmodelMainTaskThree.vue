@@ -1,4 +1,6 @@
 <template>
+  <router-link to="/Vmodel/new">Ссылка в компоненте Vmodel</router-link>
+  <router-view></router-view>
   <P class="p">Child components {{ data }}</P>
   <input class="input" type="text" :value="data" @input="$event = data = $event.target.value" />
   <br />
