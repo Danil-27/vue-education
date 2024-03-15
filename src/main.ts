@@ -4,7 +4,8 @@ import App from './App.vue';
 import 'normalize.css';
 
 import commentsOne from './components/V-bind/VbindMain.vue';
-import commentsTwo from './components/V-model/VmodelMainTaskThree.vue';
+import commentsTwo from './components/V-model/VmodelMainVue3.vue';
+import commentsThree from './components/V-model/VmodelMainTaskThree.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -14,9 +15,14 @@ const router = createRouter({
       component: commentsOne
     },
     {
+      name: 'VmodelMainVue',
+      path: '/VmodelMainVue',
+      component: commentsTwo
+    },
+    {
       name: 'Vmodel',
       path: '/Vmodel',
-      component: commentsTwo,
+      component: commentsThree,
       children: [
         {
           path: 'new',

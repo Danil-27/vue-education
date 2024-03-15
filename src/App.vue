@@ -6,6 +6,7 @@
       <br />
       <RouterLink to="/Vmodel">Routing ссылка `/Vmodel`</RouterLink>
       <br />
+      <div class="btn" @click="$router.push({ name: 'VmodelMainVue' })">кликни переключу</div>
     </div>
     <div class="app__main">
       <!-- CONTENT -->
@@ -17,11 +18,7 @@
 </template>
 I
 
-<script setup>
-// import VmodelMainTaskThree from './components/V-model/VmodelMainTaskThree.vue';
-// import Vb from './components/V-bind/VbindMain.vue';
-import { ref } from 'vue';
-</script>
+<script setup></script>
 
 <style scoped>
 * {
@@ -29,5 +26,11 @@ import { ref } from 'vue';
   margin: 0;
   padding: 0;
   background-color: rgb(33, 44, 64);
+}
+.btn {
+  padding: 5px 5px;
+  margin: 10px 10px;
+  background-color: blueviolet;
+  color: blanchedalmond;
 }
 </style>
