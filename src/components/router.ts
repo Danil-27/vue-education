@@ -5,7 +5,14 @@ import Catalog from './catalogPage.vue'
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/catalog', component: Catalog }
+  {
+    path: '/catalog',
+    component: Catalog,
+    children: [
+      { path: 'soups', component: () => import('./soupComponent.vue') },
+      { path: 'woks', component: () => import('./woksComponent.vue') }
+    ]
+  }
 ]
 
 const router = createRouter({
