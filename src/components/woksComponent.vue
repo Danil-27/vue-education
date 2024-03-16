@@ -1,5 +1,8 @@
 <template>
-  <div>woks here!!!!</div>
+  <div>
+    woks here!!!!
+    <button @click="$router.push('/')">На главную</button>
+  </div>
 </template>
 
 <script setup lang="ts"></script>
