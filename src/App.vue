@@ -1,7 +1,12 @@
 <template>
-  <div></div>
+  <div>
+    <Header />
+    <RouterView />
+  </div>
 </template>
 
-<script></script>
+<script setup lang="ts">
+import Header from './components/HeaderBar.vue'
+</script>
 
 <style scoped></style>
