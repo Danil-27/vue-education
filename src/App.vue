@@ -1,7 +1,16 @@
 <template>
-  <div></div>
+  <div>
+    <TasksOne></TasksOne>
+  </div>
 </template>
 
-<script></script>
+<script setup>
+import TasksOne from './components/tasks-1/TasksOne.vue';
+</script>
 
-<style scoped lang="scss"></style>
+<style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+}
+</style>
