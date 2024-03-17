@@ -1,12 +1,13 @@
 <template>
   <div class="container">
-    <SlotsMainTwo></SlotsMainTwo>
+    <SlotsMainThree></SlotsMainThree>
   </div>
 </template>
 
 <script setup>
 // import SlotsMain from '@/components/SlotsMainOne.vue';
-import SlotsMainTwo from '@/components/SlotsMainTwo.vue';
+// import SlotsMainTwo from '@/components/SlotsMainTwo.vue';
+import SlotsMainThree from '@/components/SlotMainThree.vue';
 </script>
 
 <style lang="scss">
