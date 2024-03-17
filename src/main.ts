@@ -1,6 +1,6 @@
-import { createApp } from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
+import { createApp } from 'vue';
+import App from './App.vue';
+import 'normalize.css';
+import { router } from './router/routers';
 
-createApp(App).use(store).use(router).mount("#app");
+createApp(App).use(router).mount('#app');
