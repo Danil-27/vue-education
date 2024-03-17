@@ -1,7 +1,11 @@
 <template>
-  <div></div>
+  <div>
+    <Catalog />
+  </div>
 </template>
 
-<script></script>
+<script setup lang="ts">
+import Catalog from './components/catalogPage.vue'
+</script>
 
 <style scoped></style>
