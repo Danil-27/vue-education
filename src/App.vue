@@ -1,7 +1,11 @@
 <template>
-  <div></div>
+  <div>
+    <FieldComponent />
+  </div>
 </template>
 
-<script></script>
+<script setup lang="ts">
+import FieldComponent from './FieldComponent.vue';
+</script>
 
 <style scoped lang="scss"></style>
