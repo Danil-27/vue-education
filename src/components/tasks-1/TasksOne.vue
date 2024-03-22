@@ -1,4 +1,7 @@
 <template>
+  <div>
+    <TabMain></TabMain>
+  </div>
   <div class="box container">
     <div class="box__header">
       <router-link to="/">Home</router-link>
@@ -9,7 +12,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import TabMain from './TabMain.vue';
+</script>
 
 <style lang="scss">
 a {
@@ -24,7 +29,7 @@ a {
 
 .box {
   background-color: var(main);
-  height: 100vh;
+
   &__header {
     width: 100%;
     height: 40px;
