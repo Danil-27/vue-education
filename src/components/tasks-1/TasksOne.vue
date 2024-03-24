@@ -1,5 +1,6 @@
 <template>
   <div>
+    <TemplateRefs></TemplateRefs>
     <TabMain></TabMain>
   </div>
   <div class="box container">
@@ -13,6 +14,7 @@
 </template>
 
 <script setup>
+import TemplateRefs from './TemplateRefs.vue';
 import TabMain from './TabMain.vue';
 </script>
 

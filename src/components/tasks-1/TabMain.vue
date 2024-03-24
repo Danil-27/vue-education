@@ -34,8 +34,6 @@ const tabs = ref(['About', 'Contact']);
     display: flex;
     height: 30px;
     gap: 20px;
-    .btn {
-    }
   }
 }
 .component {
