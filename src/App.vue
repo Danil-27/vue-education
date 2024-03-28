@@ -1,7 +1,9 @@
 <template>
-  <div></div>
+  <div><ProvideInjecVue></ProvideInjecVue></div>
 </template>
 
-<script></script>
+<script setup>
+import ProvideInjecVue from './ProvideInjec/ProvideInjecMain.vue';
+</script>
 
 <style scoped lang="scss"></style>
