@@ -1,9 +1,28 @@
 <template>
-  <div><forceUpdate></forceUpdate></div>
+  <main class="container">
+    <Suspense @pending="pending" @fallback="fallback" @resolved="resolved">
+      <template #default>
+        <AsynComponentsMain />
+      </template>
+      <template #fallback>
+        <p>Loading...</p>
+      </template>
+    </Suspense>
+  </main>
 </template>
 
 <script setup>
-import forceUpdate from './forceUpdate/forceUpdateMain.vue';
+import AsynComponentsMain from './async-components/AsynComponentsMain.vue';
+
+const pending = () => {
+  console.log('pending');
+};
+const fallback = () => {
+  console.log('fallback');
+};
+const resolved = () => {
+  console.log('resolved');
+};
 </script>
 
 <style scoped lang="scss">
