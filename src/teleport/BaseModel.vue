@@ -10,6 +10,7 @@
           <p>This modal is now outside of our vue application!</p>
         </slot>
         <button @click="closeModal">Close</button>
+        <GlobalComponent>sss</GlobalComponent>
       </div>
     </div>
   </Teleport>
