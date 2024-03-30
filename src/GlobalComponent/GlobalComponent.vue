@@ -1,7 +1,20 @@
 <template>
-  <div><button>click me</button></div>
+  <div class="btn">
+    <button @click="log">GlobalComponent + mixin-log</button>
+    <p>{{ y }}</p>
+    <p>{{ x }}</p>
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useMouse } from '../mix/mouse';
 
-<style lang="scss" scoped></style>
+const { x, y } = useMouse();
+</script>
+
+<style lang="scss" scoped>
+.btn {
+  margin: 5px 0px;
+}
+</style>
+../mix/mouse

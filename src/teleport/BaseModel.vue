@@ -9,8 +9,8 @@
           <h1>Vue Teleport BaseModel</h1>
           <p>This modal is now outside of our vue application!</p>
         </slot>
+        <GlobalComponent />
         <button @click="closeModal">Close</button>
-        <GlobalComponent>sss</GlobalComponent>
       </div>
     </div>
   </Teleport>
