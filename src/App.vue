@@ -1,7 +1,11 @@
 <template>
-  <div></div>
+  <div>
+    <A />
+  </div>
 </template>
 
-<script></script>
+<script setup lang="ts">
+import A from './components/ComponentA.vue';
+</script>
 
 <style scoped lang="scss"></style>
