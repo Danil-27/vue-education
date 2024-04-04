@@ -1,7 +1,10 @@
 <template>
+  <h1></h1>
   <div></div>
 </template>
 
-<script></script>
+<script setup></script>
 
-<style scoped lang="scss"></style>
+<style lang="scss" scoped>
+@import './scss/reset.scss';
+</style>
