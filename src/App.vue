@@ -1,22 +1,16 @@
 <template>
   <h2 class="heading">Modifiers</h2>
   <div class="flex">
-    <modifiersStop class="btn"></modifiersStop>
-    <modifiersPrevent class="btn"></modifiersPrevent>
-    <modifiersCapture class="btn"></modifiersCapture>
-    <modifiersSelf class="btn"></modifiersSelf>
-    <modifiersOnce class="btn"></modifiersOnce>
-    <modifiersPassive class="btn"></modifiersPassive>
+    <LazyModifiers class="input"></LazyModifiers>
+    <NumberModifiers class="input"></NumberModifiers>
+    <TrimModifiers class="input"></TrimModifiers>
   </div>
 </template>
 
 <script setup>
-import modifiersStop from './components/ModifiersStop.vue';
-import modifiersPrevent from './components/ModifiersPrevent.vue';
-import modifiersCapture from './components/ModifiersCapture .vue';
-import modifiersSelf from './components/ModifiersSelf.vue';
-import modifiersOnce from './components/ModifiersOnce.vue';
-import modifiersPassive from './components/ModifiersPassive.vue';
+import LazyModifiers from './V-modalModifiers/LazyModifiers.vue';
+import NumberModifiers from './V-modalModifiers/NumberModifiers.vue';
+import TrimModifiers from './V-modalModifiers/TrimModifiers.vue';
 </script>
 
 <style lang="scss">
@@ -42,9 +36,10 @@ h1 {
   gap: 20px;
   padding: 10px;
 }
-.btn {
+.input {
+  border: solid rgb(98, 203, 74) 2px;
+  flex-direction: column;
   padding: 10px;
   display: block;
-  border: 2px solid rgb(55, 158, 169);
 }
 </style>
